@@ -1,0 +1,693 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    max-width: 1265px;
+    margin: 0 auto ;
+
+}
+
+.menu{
+    background-color:black;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.logo-prominas{
+    width: 22%;
+}
+
+.lista-menu{
+    display: flex;
+    align-items: center;
+}
+
+.lista-menu li{
+    list-style: none;
+
+}
+
+.lista-menu li a:hover{
+    color: #27fb6b;
+    transition: 0.25s linear;
+}
+
+.lista-menu li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.95em;
+    margin-right: 20px;
+    transition: 0.25s linear;
+}
+
+div.banner{
+    height: 720px;
+    background: url(../img/banner.png);
+    border-radius: 10px;
+    position: relative;
+}
+
+.paragrafo-banner{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+
+}
+
+.paragrafo-banner:nth-child(1){
+    color: white;
+    top: 30%;
+    left: 55%;
+    width: 300px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: right;
+}
+
+.paragrafo-banner:nth-child(2){
+    color: #27fb6b;
+    top: 43%;
+    left: 55%;
+    width: 300px;
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align: right;
+}
+
+.button-banner{
+     background-color: #27fb6b;
+     border: none;
+     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.34); 
+     border-radius: 30px;
+     padding: 20px;
+     font-weight: 600;
+     font-size: 1em;
+     bottom: 5%;
+     position: absolute;
+     left: 60%;
+     transition: 0.25s linear;
+}
+
+.button-banner:hover{
+    transform: scale(1.1); 
+    transition: 0.25s linear;
+}
+
+
+.container-tipo-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulo-cursos{
+    color: #27fb6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+.tipo-cursos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.tipo-cursos h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.tipo-cursos p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lista-cursos{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-cursos li{
+    color: #27fb6b;
+    border: 1px solid white;
+    list-style: none;
+    margin: 7px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.1s linear;
+}
+
+.lista-cursos li:hover{
+    border: 1px solid #27fb6b;
+    transition: 0.1s linear;
+}
+
+.lista-cursos .nome-curso{
+    max-width: 75%;
+}
+
+.lista-cursos .duracao-curso{
+    color: white;
+    font-size: 0.7em;
+    float: right;
+}
+
+.aviso{
+    width: 50%;
+}
+
+.atencao{
+    color: rgb(255, 255, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    border:1px solid yellow;
+    border-radius: 8px;
+    margin: 0;
+    padding: 30px;
+    width: 65%;
+    float: left;
+    margin-left: 50%;
+    transform: translateX(-50%);
+ }
+
+ .atencao p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+ }
+
+ .formulario{
+    background-color: white;
+    margin: 15px 0 0 0 ;
+    padding: 10px 20px 5px 20px;
+    border-radius: 8px;
+    width: 80%;
+    height: 58%;
+    float: left;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+    
+ }
+
+ .formulario form{
+    font-family:Arial, Helvetica, sans-serif ; 
+    font-size: 1.3em;
+    text-align: left;
+    display: grid;
+    line-height: 1.5;
+    width:100%;
+    margin-bottom:3px;
+
+ }
+ 
+ .formulario .form-nome{
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;   
+    font-size: 0.85em;
+    border: 1px solid black;
+ }
+ 
+ .formulario .form-email{
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    border: 1px solid black;
+ }
+ 
+ .formulario .form-whatsapp{
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    border: 1px solid black;
+ }
+ 
+ .formulario .form-curso-interesse{
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    border: 1px solid black;
+ }
+
+.form-nome::placeholder {
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.form-email::placeholder {
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.form-whatsapp::placeholder {
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+ .formulario .button-enviar{
+    background-color: #27fb6b;
+    border: none;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.346); 
+    border-radius: 50px;
+    border-width:0.5px;
+    border-bottom: 28px;
+    text-shadow: 1px 1px 25px #35eb19;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 0.7em;
+    bottom: 5%;
+    width:185px;
+    height:42px;
+    background:#27fb6b;
+    display: block;
+    margin: 40px auto;
+ }
+
+ .formulario .button-enviar:hover{
+    background: #35eb19;
+}
+    
+html {
+    scroll-behavior: smooth;
+}
+
+.titulo-formas-de-ingresso{
+    color: #27fb6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+.box-img-formas-de-ingresso{
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap;  
+}
+
+.img-forma-de-ingresso{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 50%;
+    max-height: 150px;
+    margin: 0 auto;
+}
+
+.card-forma-de-ingresso{
+    width: 25%;
+    color: #fffdfd; 
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-forma-de-ingresso h3{
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em; 
+    margin-top: 5px; 
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.card-forma-de-ingresso p{
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em; 
+    margin-top: 5px; 
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.banner-formas-de-ingresso{
+    padding-top: 40px;
+    max-width: 100%;
+}
+
+.container-banner-formas-de-ingresso{
+    position: relative;
+}
+
+.button-banner-formas-de-ingresso{
+    background-color: #27fb6b;
+     border: none;
+     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.34); 
+     border-radius: 30px;
+     padding: 20px;
+     font-weight: 600;
+     font-size: 1em;
+     bottom: 20%;
+     transition: 0.25s linear;
+     position: absolute;
+     left: 10%;
+
+}
+
+.button-banner-formas-de-ingresso:hover{
+    transform: scale(1.1); 
+    transition: 0.25s linear;
+}
+
+.titulo-aprendizado{
+    color: #27fb6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+.subtitulo-aprendizado{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+}
+
+.lista-aprendizado{
+    list-style-type: none;
+    padding: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 0 auto;
+    margin-right:  auto;
+}
+
+i.bi-check-circle-fill{
+    color: #27fb6b;
+
+}
+
+.lista-aprendizado li{
+    color: white;
+    width: calc(45% - 10px);
+    margin-right:  auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    display: flex;
+}
+
+.box-seta-aprendizado{
+    position: relative;
+}
+
+.titulo-seta-aprendizado{
+    color: #27fb6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    line-height: 1.5;
+    max-width: 45%;
+    margin: 30px 30px;
+    margin-top: 150px;
+    padding: auto;
+}
+
+.img-seta-aprendizado{
+    display: flex;
+    width: 50%;
+    min-width: 608px;
+    position: absolute;
+    top: 200px;
+    left: 20%;
+}
+
+.comparativo-graduacao-ead{
+    display: flex;
+    width: 45%;
+    min-width: 600px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+
+.projeto-rondon{
+    background-image: url(../img/setaaprendizado.png);
+    height: 545px;
+    position: relative;
+}
+
+.projeto-rondon h1{
+    color: #27fb6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.8em;
+    text-align: center;
+    display: flex;
+    line-height: 1.5;
+    max-width: 45%;
+    margin: 30px 30px;
+    margin-top: 550px;
+    padding: auto;
+}
+
+.projeto-rondon p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: left;
+    display: flex;
+    line-height: 1.5;
+    max-width: 45%;
+    margin: 15px 30px;
+    margin-top: auto;
+    padding: auto;
+}
+
+.img-fundo-rondon{
+    display: flex;
+    width: 50%;
+    min-width: 608px;
+    position: absolute;
+    margin-top: -200px;
+    opacity: 0.5;
+}
+
+.img-logo-rondon{
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.img-capa-video-rondon{
+    top: 0;
+    right: 0;
+    position:absolute;
+}
+
+.icon-play{
+    position: absolute;
+    width: 100px;
+    border-radius: 50%;
+    right: 20%;
+    top: 40%;
+}
+
+
+.container-video{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #00000073;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+
+.vidas-transformadas h3{
+    color: #27fb6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+
+
+.vidas-transformadas h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+    align-items: center;
+    border: 20px;
+    margin:-30px 100px 40px 100px;
+    font-weight: 400;
+}
+
+.container-testemunhos{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.background-testemunho{
+    opacity: 0.1;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.testemunho-msg{
+    text-align: justify;
+}
+
+.testemunho-box{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(122, 243, 142, 0.922);
+    color: #111010;
+    width: 25%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.testemunho-box img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.button-aprendizado{
+    background-color: #27fb6b;
+    border: none;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.34); 
+    border-radius: 30px;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    transition: 0.25s linear;
+    margin-top: 50px;
+    display: block;
+
+}
+
+.button-aprendizado:hover{
+    transform: scale(1.1); 
+    transition: 0.25s linear;
+}
+
+.img-reclame-aqui{
+    margin-top: 50px;
+    width: 95%;
+    margin-left: 30px;
+}
+
+.informacoes h2{
+    color: #27fb6b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.lista-informacoes li{
+    color: #ffffff;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.1s linear;
+    border: 1px solid #27fb6b;
+    font-size: 1.3em;
+    
+}
+
+.lista-informacoes li:hover{
+    /* border: 1px solid #27fb6b; */
+    transition: 0.1s linear; 
+}
+
+.lista-informacoes ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.span-lista-informacoes{
+    color: rgb(0, 0, 0);
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    transition: all .25s linear;
+    font-size: 0.85em;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px ;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.919);
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.checkbox-resposta{
+    display: none;
+}
+
+.checkbox-resposta:checked ~ .span-lista-informacoes{
+    padding: 5px;
+    height: 100%;
+    transition: all .25s linear;
+}
+
+.lista-informacoes label{
+    float: right;
+}
+
+footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+footer h3{
+    font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer div i{
+    color: #27fb6b;
+    margin: 10px;
+    font-size: 1.4em;
+
+}
+
